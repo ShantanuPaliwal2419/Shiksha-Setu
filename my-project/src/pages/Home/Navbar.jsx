@@ -14,10 +14,25 @@ const Navbar = () => {
             <a href="#features" className="hover:text-[#2563EB] hover:underline transition-colors">Features</a>
             <a href="#how" className="hover:text-[#2563EB] hover:underline transition-colors">How It Works</a>
             <a href="#benefits" className="hover:text-[#2563EB] hover:underline transition-colors">Benefits</a>
-            <a href="#contact" className="hover:text-[#2563EB] hover:underline transition-colors">Contact</a>
+            
+            {/* Register Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setOpen(!open)}
+                className="bg-[#1E3A8A] text-white px-4 py-2 left-margin-4  rounded transition-all duration-300 ease-in-out hover:bg-[#2563EB] focus:outline-none focus:ring-2 focus:ring-[#1E3A8A] focus:ring-opacity-50"
+              >
+                Register
+              </button>
+              {open && (
+                <div className="absolute right-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
+                  <a href="/signin/admin" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Register as Admin</a>
+                  
+                  <a href="/signin/student" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors"> as Student</a>
+                </div>
+              )}
 
             {/* Login Dropdown */}
-            <div className="relative">
+           
               <button
                 onClick={() => setOpen(!open)}
                 className="bg-[#1E3A8A] text-white px-4 py-2 rounded transition-all duration-300 ease-in-out hover:bg-[#2563EB] focus:outline-none focus:ring-2 focus:ring-[#1E3A8A] focus:ring-opacity-50"
@@ -27,9 +42,8 @@ const Navbar = () => {
 
               {open && (
                 <div className="absolute right-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
-                  <a href="/login/admin" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Login as Admin</a>
-                  <a href="/login/staff" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Login as Staff</a>
-                  <a href="/login/student" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Login as Student</a>
+                  <a href="/signin/admin" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Signin as Admin</a>
+                  <a href="/signin/student" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Signin as Student</a>
                 </div>
               )}
             </div>

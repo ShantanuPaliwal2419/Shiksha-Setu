@@ -1,15 +1,16 @@
+import { Card } from "@/components/ui/card";
 import { Mail, Lock, Building2 } from "lucide-react";
 
-export default function LoginForm() {
+export default function StaffLoginForm() {
   return (
-    <div className="max-w-md mx-auto bg-white shadow rounded p-10 space-y-5 mt-20">
+    <Card className="max-w-md mx-auto bg-white shadow rounded p-6 mt-8 space-y-2 ">
       {/* Heading */}
       <div className="text-center mb-4">
         <h2 className="text-2xl font-bold text-[#1E3A8A]">
-          ERP Admin Login
+          ERP Staff Login
         </h2>
         <p className="text-gray-600 text-sm mt-1">
-          Access your college ERP portal — Admin
+          Access your college ERP portal — Staff
         </p>
       </div>
 
@@ -33,6 +34,21 @@ export default function LoginForm() {
         />
       </div>
 
+      {/* Department Dropdown */}
+      <div className="relative">
+        <select
+          className="w-full pl-3 pr-3 py-2 border rounded text-gray-600 focus:ring-[#1E3A8A] focus:border-[#1E3A8A]"
+          defaultValue=""
+        >
+          <option value="" disabled>
+            Select Department
+          </option>
+          <option value="hostel">Hostel</option>
+          <option value="academics">Academics</option>
+          <option value="account">Account</option>
+        </select>
+      </div>
+
       {/* Password Field */}
       <div className="relative">
         <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5" />
@@ -47,6 +63,6 @@ export default function LoginForm() {
       <button className="w-full bg-[#1E3A8A] text-white py-2 rounded hover:bg-[#162D5C]">
         Login
       </button>
-    </div>
+    </Card>
   );
 }

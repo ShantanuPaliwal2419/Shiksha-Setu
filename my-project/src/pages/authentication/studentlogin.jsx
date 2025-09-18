@@ -1,15 +1,15 @@
-import { Mail, Lock, Building2 } from "lucide-react";
+import { Mail, Lock, Building2, IdCard } from "lucide-react";
 
-export default function LoginForm() {
+export default function StudentLoginForm() {
   return (
     <div className="max-w-md mx-auto bg-white shadow rounded p-10 space-y-5 mt-20">
       {/* Heading */}
       <div className="text-center mb-4">
         <h2 className="text-2xl font-bold text-[#1E3A8A]">
-          ERP Admin Login
+          ERP Student Login
         </h2>
         <p className="text-gray-600 text-sm mt-1">
-          Access your college ERP portal — Admin
+          Access your college ERP portal — Student
         </p>
       </div>
 
@@ -29,6 +29,16 @@ export default function LoginForm() {
         <input
           type="text"
           placeholder="College Name"
+          className="w-full pl-10 pr-3 py-2 border rounded focus:ring-[#1E3A8A] focus:border-[#1E3A8A]"
+        />
+      </div>
+
+      {/* Enrollment Number Field */}
+      <div className="relative">
+        <IdCard className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 h-5 w-5" />
+        <input
+          type="text"
+          placeholder="Enrollment Number"
           className="w-full pl-10 pr-3 py-2 border rounded focus:ring-[#1E3A8A] focus:border-[#1E3A8A]"
         />
       </div>
