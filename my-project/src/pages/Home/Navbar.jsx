@@ -42,9 +42,10 @@ const Navbar = () => {
 
               {open && (
                 <div className="absolute right-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
-                  <a href="/signin/admin" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Signin as Admin</a>
-                  <a href="/signin/student" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Signin as Student</a>
-                </div>
+                <a href="/login/admin" className="block py-2 text-gray-700 hover:text-[#2563EB]" onClick={() => setIsMobileMenuOpen(false)}>Login as Admin</a>
+                <a href="/login/staff" className="block py-2 text-gray-700 hover:text-[#2563EB]" onClick={() => setIsMobileMenuOpen(false)}>Login as Staff</a>
+                <a href="/login/student" className="block py-2 text-gray-700 hover:text-[#2563EB]" onClick={() => setIsMobileMenuOpen(false)}>Login as Student</a>
+             </div>
               )}
             </div>
           </nav>

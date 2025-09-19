@@ -8,6 +8,10 @@ import StaffLoginForm from "./pages/authentication/stafflogin";
 import StudentLoginForm from "./pages/authentication/studentlogin";
 import Adminregistrationform from "./pages/authentication/adminregister";
 import Studentregistrationform from "./pages/authentication/studentregister";// import StudentDashboard if you make it
+import { StaffDashboard } from "./pages/Dashboard/staff";
+import { AccountsStaffDashboard } from "./pages/Dashboard/AccountsStaff";
+import { HostelStaffDashboard } from "./pages/Dashboard/HostelStaff";
+
 
 export default function App() {
   return (
@@ -29,3 +33,5 @@ export default function App() {
     
   );
 }
+
+
