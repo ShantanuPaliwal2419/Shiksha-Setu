@@ -56,32 +56,23 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Login Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => {
-                setLoginOpen(!loginOpen);
-                setRegisterOpen(false);
-              }}
-              className="bg-[#1E3A8A] text-white px-4 py-2 rounded transition-all duration-300 hover:bg-[#2563EB] focus:outline-none"
-            >
-              Login
-            </button>
-            {loginOpen && (
-              <div className="absolute right-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
-                <a href="/login/admin" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                  Login as Admin
-                </a>
-                <a href="/login/staff" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                  Login as Staff
-                </a>
-                <a href="/login-student" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                  Login as Student
-                </a>
-              </div>
-            )}
-          </div>
-        </nav>
+            {/* Login Dropdown */}
+           
+              <button
+                onClick={() => setOpen(!open)}
+                className="bg-[#1E3A8A] text-white px-4 py-2 rounded transition-all duration-300 ease-in-out hover:bg-[#2563EB] focus:outline-none focus:ring-2 focus:ring-[#1E3A8A] focus:ring-opacity-50"
+              >
+                Login
+              </button>
+
+              {open && (
+                <div className="absolute right-0 mt-2 w-44 bg-white border rounded shadow-lg z-10">
+                  <a href="/signin/admin" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Signin as Admin</a>
+                  <a href="/signin/student" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors">Signin as Student</a>
+                </div>
+              )}
+            </div>
+          </nav>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">

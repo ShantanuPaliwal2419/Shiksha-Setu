@@ -8,11 +8,7 @@ import StaffLoginForm from "./pages/authentication/stafflogin";
 import StudentLoginForm from "./pages/authentication/studentlogin";
 import Adminregistrationform from "./pages/authentication/adminregister";
 import Studentregistrationform from "./pages/authentication/studentregister";// import StudentDashboard if you make it
-import FinancePage from "./pages/Dashboard/finance";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import AddStaffForm from "./pages/Dashboard/AddStaffform";
-import StudentDashboard from "./pages/Dashboard/studentDashboard";
+
 export default function App() {
   return (
    
@@ -38,3 +34,5 @@ export default function App() {
     
   );
 }
+
+
