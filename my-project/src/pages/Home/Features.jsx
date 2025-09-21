@@ -86,19 +86,18 @@ export const Features = () => {
         </Card>
 
         {/* Feature 6 - Library */}
-        <Card className="w-full shadow hover:shadow-md transition-all duration-300">
-          <CardHeader className="flex items-center space-x-3">
-            <BookOpen className="h-7 w-7 text-[#1E3A8A]" />
-            <CardTitle className="text-[#1E3A8A]">Library</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-600 text-sm">
-              Track book issues and returns in real time. Students and staff
-              can check availability instantly, reducing queues and lost
-              records.
-            </p>
-          </CardContent>
-        </Card>
+         <Card className="w-full shadow hover:shadow-md transition-all duration-300">
+  <CardHeader className="flex items-center space-x-3">
+    <BookOpen className="h-7 w-7 text-[#1E3A8A]" />
+    <CardTitle className="text-[#1E3A8A]">AI-Driven Insights</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p className="text-gray-600 text-sm">
+      Leverage AI-driven automation to monitor book issues, returns, and availability in real time. Generate detailed, actionable reports instantly, helping staff and students make smarter decisions. 
+    </p>
+  </CardContent>
+</Card>
+
       </div>
     </section>
   );
