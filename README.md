@@ -1,6 +1,7 @@
 # 📚 Shiksha-Setu
 
-![Shiksha-Setu Logo](logo.png)  
+![Shiksha-Setu Logo](assets/shiksha-setu.jpg)
+
 *A Unified ERP Platform for Colleges*
 
 ---
